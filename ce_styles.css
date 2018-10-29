@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Costume Expressions Front Page
+   Author: Joseph Roberts
+   Date:   10.24.18
+   
+   Filename: ce_styles.css
+*/
+
+
+/* Window and Body Styles */
+/*This determines the background color of the entire document.*/
+html {
+    background-color: rgb(101, 101, 101)
+}
+
+/*This sets the background color, format, and font of the page body.*/
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    min-width: 320px;
+    max-width: 960px;
+    position: relative;
+}
+
+/*This determines the display style of the images and makes them resize to the given space.*/
+img {
+    display: block;
+    width: 100%;
+}
+
+/*This removes the underline from the links in the nav.*/
+nav a {
+    text-decoration: none;
+}
+
+/* Body Header Styles */
+/*This determines the background color and height of the nav.*/
+body>header {
+    background-color: rgb(191, 168, 170);
+    height: 40px;
+}
+
+/*Formats the nav.*/
+body>header>nav>ul>li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding: 10px 0px;
+}
+
+/*Determines the text size and color of the nav text.*/
+body>header>nav a:visited,
+body>header>nav a:link {
+    font-size: 0.9em;
+    color: rgb(51, 51, 51)
+}
+
+/*Determines the text color of links that are hovered over or clicked on.*/
+body>header>nav a:hover,
+body>header>nav a:active {
+    color: rgb(255, 211, 211)
+}
+
+/* DIV Container Styles */
+/*Determines the padding of divs with the class container.*/
+div#container {
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+/*Determines the padding of the divs with the class cell.*/
+div.cell a {
+    display: block;
+    width: 100%;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+/* Footer Styles */
+/*Positions and formats the footer and determines the text color and text size.*/
+footer {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    color: rgb(143, 33, 36);
+    text-align: right;
+    font-size: 2vmin;
+}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Grids used in the Costume Expressions Front Page
+   Author: Joseph Roberts
+   Date:   10.24.18
+   
+   Filename: ce_grids.css
+
+*/
+
+
+/* Grid Rows Styles */
+/*the div elements with the class row take up 100% of the container and clear if there are elements in the margins on the left or right of it.*/
+div.row {
+    width: 100%;
+    clear: both;
+}
+
+/*This makes the rows expand around the content.*/
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Grid Columns Styles */
+/*The following ten styles determine the size of the columns and their postion to one another.*/
+div[class^='column'] {
+    float: left;
+}
+
+div.column100 {
+    width: 100%;
+}
+
+div.column80 {
+    width: 80%;
+}
+
+div.column75 {
+    width: 75%;
+}
+
+div.column67 {
+    width: 66.67%;
+}
+
+div.column50 {
+    width: 50%;
+}
+
+div.column40 {
+    width: 40%;
+}
+
+div.column33 {
+    width: 33.33%;
+}
+
+div.column25 {
+    width: 25%;
+}
+
+div.column20 {
+    width: 20%;
+}
+
+/* Grid Spacing Styles */
+/*The following style determines how the width property interacts with spacing.*/
+.container,
+.row,
+div[class^='column'],
+.cell,
+.cell a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
