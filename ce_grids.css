@@ -14,7 +14,7 @@
 
 
 /* Grid Rows Styles */
-/*the div elements with the class row take up 100% of the container and clear if there are elements in the margins on the left or right of it.*/
+/*The div elements with the class row take up 100% of the container and clear if there are elements in the margins on the left or right of it.*/
 div.row {
     width: 100%;
     clear: both;
